@@ -1,38 +1,166 @@
 @font-face {
     font-family: 'pixel';
     src: url('pixel.TTF');
+}
+@font-face {
     font-family: 'determination';
     src: url('determination.ttf');
 }
+body {
+    background-color: #1c2329;
+}
+/*HEADING*/
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'pixel';
-    display: flex;
+    text-align: center;
+    color:white;
+    text-shadow: 4px 4px #273644;
+}
+.caption {
+    display: block;
+    align-items: center;
     justify-content: center;
-    
+    margin-inline: 50px;
 }
-
-p.caption {
-    font-family: 'determination';
+.caption p {
+    font-size: 25px;
+    font-family: 'pixel';
+    text-align: center;
+    color:white;
+    background-color: #29333c;
+    box-shadow: 4px 4px #12171b;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
 }
+/*MAIN*/
+/*MAIN*/
 
+/*INPUTS*/
 section.input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    
-
+    background-color: #41515f;
+    border-radius: 5px;
+    text-align: center;
+    margin-inline: 50px;
+    padding-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'determination';
+    letter-spacing: 1px;
+    color: white;
 }
 
+/*TEXTAREA STUFFS*/
 textarea {
+    font-family: 'determination';
+    font-size: 20px;
     resize: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px #12171b;
+    text-align: center;
 }
 
+textarea:focus {
+    background-color: rgb(175, 175, 175);
+}
+/*TEXTAREA*/
+
+/*BUTTONS*/
+.buttons button {
+    font-family: 'determination';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-convert {
+    background-color: #23ce56;  
+}
+.button-convert:hover {
+    background-color: green;
+}
+.button-reset {
+    background-color: #c73131;
+}
+.button-reset:hover {
+    background-color: darkred;
+}
+.button-reverse {
+    background-color: #2750d6;
+}
+.button-reverse:hover {
+    background-color: darkblue;
+}
+
+/*RESULTS*/
 section.result-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    background-color: #41515f;
+    border-radius: 5px;
+    margin-inline: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+/*FORMULA INFORMATION*/
+section.info-container header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.info-container h3 {
+    font-size: 25px;
+    font-family: 'pixel';
+    font-weight: normal;
+    color: white;
+    text-shadow: 3px 3px #273644;
+    margin: 20px 0px 0px;
+}
+
+section.info {
+    padding: 10px 0px 10px;
+    background-color: #41515f;;
+    align-items: center;
+    margin-inline: 50px;
+}
+section.info-container p {
+    font-family: 'determination';
+    font-size: 20px;
+    color: white;
+    padding: 0px 25px 0px 25px;
+
+}
+.section.more-info{
+    display: flex;
+}
+
+.formula-S {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+/*FOOTER*/
+footer {
+    display: ruby-text;
+    font-family: 'determination';
+    background-color: #29333c;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
 }
 

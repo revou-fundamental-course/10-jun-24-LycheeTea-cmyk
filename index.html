@@ -13,33 +13,38 @@
         <main>
             <!--CELCIUS-->
             <div class="caption">
-                <p>Please input the temperature in CELCIUS (&deg;C) here!</p>
+                <p>PLEASE INPUT THE TEMPERATURE HERE!</p>
             </div>
-
+            
             <section class="input-container">
                 <header>
-                    <h3>CELCIUS (&deg;C):</h3>  
+                    <h3 id="celcius">CELCIUS (&deg;C)</h3>  
                 </header> 
-                <section>
-                    <textarea>
+                <section class="input">
+                    <textarea id="temp-input">
 
                     </textarea>
-                    <section>
-                        <button class="button-convert">KONVERSI</button>
-                        <button class="button-reset">RESET</button>
-                        <button class="button-reverse">REVERSE</button>
+                    <section class="buttons">
+                        <button class="button-convert"onClick="convert()">
+                            KONVERSI
+                        </button>
+                        <button class="button-reset"onClick="reset(this.innerText)">
+                            RESET
+                        </button>
+                        <button class="button-reverse"onClick="reverse()">
+                            REVERSE
+                        </button>
                     </section>
                 </section>
             </section>
-<!--RESULTS-->
-        <section class="result-container">    
-            <!--FAHRENHEIT-->
+<!--RESULTS--> 
+        <section class="result-container">   
             <section>
                 <header>
-                    <h3>FAHRENHEIT (&deg;F):</h3>  
+                    <h3 id="fahrenheit">FAHRENHEIT (&deg;F)</h3>  
                 </header> 
                 <section>
-                    <textarea>
+                    <textarea id="temp-result">
 
                     </textarea>
                 </section>
@@ -48,10 +53,10 @@
             <!--CALCULATION-->
             <section>
                 <header>
-                    <h3>CONVERSION CALCULATION:</h3>  
+                    <h3>CONVERSION<br>CALCULATION:</h3>  
                 </header> 
                 <section>
-                    <textarea>
+                    <textarea id="conversion-result">
 
                     </textarea>
                 </section>
@@ -60,24 +65,29 @@
 <!--RESULTS-->
 
             <!--FORMULA INFORMATION-->
-            <section>
+            <section class="info-container">
                 <header>
                     <h3>Cara Konversi dari CELCIUS (&deg;C) ke FAHRENHEIT (&deg;F)</h3>  
                 </header> 
                 <hr>
-                <p>Suhu <span class="formula-S">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan Suhu <span class="formula-S">S</span> dalam derajat Celcius (&deg;C) kali <span class="formula-num">9/5</span> tambah <span class="formula-num">32.</span></p>
-              
+                <section class="info">
                 <p>
-                    <span class="formula-S">S</span><sub>(&deg;F)</sub> = (<span class="formula-S">S</span><sub>(&deg;C)</sub>x 9/5) + 32
+                    Suhu <span class="formula-S">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan Suhu <span class="formula-S">S</span> dalam derajat Celcius (&deg;C) kali <span class="formula-num">9/5</span> tambah <span class="formula-num">32.</span>
                 </p>
-                <p>atau</p>
-                <p>
-                    <span class="formula-S">S</span><sub>(&deg;F)</sub> = (<span class="formula-S">S</span><sub>(&deg;C)</sub>x 1.8) + 32
-                </p>
+                    <section class="more-info">
+                    <p>
+                        <span class="formula-S">S</span><sub>(&deg;F)</sub> = (<span class="formula-S">S</span><sub>(&deg;C)</sub> x 9/5) + 32
+                    </p>
+                    <p>atau</p>
+                    <p>
+                        <span class="formula-S">S</span><sub>(&deg;F)</sub> = (<span class="formula-S">S</span><sub>(&deg;C)</sub> x 1.8) + 32
+                    </p>
+                    </section>
+                </section>
             </section>
         </main>
         <footer>
-
+            <p> Mini Project RevoU Fundamental Course 2024</p>
         </footer>
     <script src="js/script.js"></script>
     </body>
