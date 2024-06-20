@@ -1,7 +1,38 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('pixel.TTF');
+    font-family: 'determination';
+    src: url('determination.ttf');
+}
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'pixel';
+    display: flex;
+    justify-content: center;
+    
+}
+
+p.caption {
+    font-family: 'determination';
+}
+
+section.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    
+
 }
 
 textarea {
     resize: none;
 }
+
+section.result-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
